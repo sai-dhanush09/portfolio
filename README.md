@@ -82,13 +82,5 @@ This portfolio was created to:
 
 ---
 
-## 📈 Future Improvements
-
-* Add project links
-* Add animations and icons
-* Improve UI/UX
-* Add backend integration
-
----
 
 ✨ Thank you for visiting my portfolio!
