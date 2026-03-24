@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhanush Portfolio</title>
+
+  <link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+<circle cx='50' cy='50' r='50' fill='%230f172a'/>
+<text x='50%' y='60%' font-size='50' text-anchor='middle' fill='%2338bdf8'>D</text>
+</svg>">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2>Dhanush</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Hi, I'm <span>Dhanush</span> 👋</h1>
+  <p>Aspiring Software Developer | Python & Web Developer</p>
+  <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<!-- About -->
+<section id="about" class="fade">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a Computer Science student at GITAM, Hyderabad, passionate about
+      building real-world applications using Python and web technologies.
+    </p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="fade">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">Python</div>
+    <div class="card">C</div>
+    <div class="card">JavaScript</div>
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">MySQL</div>
+    <div class="card">ServiceNow</div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="fade">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Student Record Management System</h3>
+      <p>Python + MySQL application for managing student data.</p>
+    </div>
+
+    <div class="card">
+      <h3>To-Do List Web App</h3>
+      <p>Task management web application to track daily tasks.</p>
+    </div>
+
+    <div class="card">
+      <h3>Weather Information App</h3>
+      <p>Fetches real-time weather data using API.</p>
+    </div>
+
+    <div class="card">
+      <h3>Login & Registration System</h3>
+      <p>User authentication interface with validation.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Certifications -->
+<section class="fade">
+  <h2>Certifications</h2>
+  <div class="card">
+    <ul>
+      <li>ServiceNow Micro-Certification</li>
+      <li>Cisco Networking Fundamentals</li>
+      <li>AI-ML Virtual Internship (AICTE)</li>
+      <li>Be10X AI Tools Workshop</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="fade">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: dhanushsana433@gmail.com</p>
+    <p>Phone: +91 8790450709</p>
+  </div>
+</section>
+
+<!-- JS -->
+<script>
+const fades = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+  fades.forEach(fade => {
+    const top = fade.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      fade.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
